@@ -1,232 +1,99 @@
 package database;
 
-
-
-
-
 import javax.swing.*;
 
-
-
 import java.sql.*;
-
-
-
-
-
-
-
-
-
-import javax.swing.*;
-
-
-
-import java.sql.*;
-
-
-
-
-
 
 public class DbConnection {
 
+    public Connection connection;
 
+    Statement statement;
 
-   public Connection connection;
+    ResultSet resultSet;
 
+    int value;
 
+    public DbConnection() {
 
-   Statement statement;
+        try {
 
+            String username = "root";
 
+            String password = "p@reena123";
 
-   ResultSet resultSet;
+            Class.forName("com.mysql.cj.jdbc.Driver");
 
+            connection = DriverManager.getConnection(
 
+                    "jdbc:mysql://localhost:3306/REQUIRED", username, password);
 
-   int value;
+            if (connection != null) {
 
+                System.out.println("Connected to database --> REQUIRED");
 
+            } else {
 
+                System.out.println("Error connecting to database");
 
+            }
 
-   public DbConnection(){
+            statement = connection.createStatement();
 
+        } catch (Exception e) {
 
+            e.printStackTrace();
 
-       try {
+        }
 
+    }
 
+    // Via the use of sql query
 
-           String username = "sql6581113";
+    // insert, update and delete
 
+    public int manipulate(String query) {
 
+        try {
 
-           String password = "rcnSr5E4he";
+            value = statement.executeUpdate(query);
 
+            connection.close();
 
+        } catch (SQLIntegrityConstraintViolationException ex) {
 
-           Class.forName("com.mysql.cj.jdbc.Driver");
+            JOptionPane.showMessageDialog(null, "These details already exist!");
 
+        } catch (SQLException e) {
 
+            e.printStackTrace();
 
-           connection = DriverManager.getConnection(
+        }
 
+        return value;
 
+    }
 
-                   "jdbc:mysql://sql6.freesqldatabase.com/sql6581113",username,password);
+    public ResultSet retrieve(String query) {
 
+        try {
 
+            resultSet = statement.executeQuery(query);
 
+        } catch (SQLException e) {
 
+            e.printStackTrace();
 
-                   if(connection!=null){
+        }
 
+        return resultSet;
 
+    }
 
-                       System.out.println("Connected to database");
+    public static void main(String[] args) {
 
+        new DbConnection();
 
-
-                   }else{
-
-
-
-                       System.out.println("Error connecting to database");
-
-
-
-                   }
-
-
-
-           statement = connection.createStatement();
-
-
-
-       }catch (Exception e){
-
-
-
-           e.printStackTrace();
-
-
-
-       }
-
-
-
-   }
-
-
-
-
-
-   // Via the use of sql query
-
-
-
-   // insert, update and delete
-
-
-
-   public int manipulate(String query){
-
-
-
-       try {
-
-
-
-           value = statement.executeUpdate(query);
-
-
-
-           connection.close();
-
-
-
-       }catch (SQLIntegrityConstraintViolationException ex){
-
-
-
-
-//            JOptionPane.showMessageDialog(null,"");
-
-
-
-//            JOptionPane.showMessageDialog(null, "");
-
-
-
-
-        }catch (SQLException e){
-
-
-
-           e.printStackTrace();
-
-
-
-       }
-
-
-
-       return value;
-
-
-
-   }
-
-
-
-
-
-   public ResultSet retrieve(String query){
-
-
-
-       try {
-
-
-
-           resultSet = statement.executeQuery(query);
-
-
-
-       }catch (SQLException e){
-
-
-
-           e.printStackTrace();
-
-
-
-       }
-
-
-
-       return resultSet;
-
-
-
-   }
-
-
-
-
-
-   public static void main(String[] args) {
-
-
-
-       new DbConnection();
-
-
-
-   }
-
-
+    }
 
 }
