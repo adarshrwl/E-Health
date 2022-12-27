@@ -6,7 +6,8 @@ package View;
 
 /**
  *
- * @author HP
+ * @author HP 
+ * / HP
  */
 public class ViewAllDoctors extends javax.swing.JFrame {
 
