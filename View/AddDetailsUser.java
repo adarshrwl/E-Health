@@ -343,3 +343,4 @@ public class AddDetailsUser extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField6;
     // End of variables declaration//GEN-END:variables
 }
+//java add details
