@@ -6,8 +6,11 @@ package View;
 
 /**
  *
+ * 
+ * 
  * @author HP
  */
+// public class 
 public class AddDetailsUser extends javax.swing.JFrame {
 
     /**
