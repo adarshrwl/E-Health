@@ -46,6 +46,12 @@ public class BookingAppointmentController {
         int result = dbConnection.manipulate(query);
         return result;       
      }
+     public int cancelappointment(){
+         String query = String.format("update bookingappointment set bookingstatus='%s'", "Cancel");
+           dbConnection = new DbConnection();
+        int result = dbConnection.manipulate(query);
+        return result;
+     }
 }
     
 

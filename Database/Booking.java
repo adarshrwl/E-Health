@@ -4,7 +4,7 @@ import javax.swing.*;
 
 import java.sql.*;
 
-public class DbConnection {
+public class Booking {
 
     public Connection connection;
 
@@ -14,7 +14,7 @@ public class DbConnection {
 
     int value;
 
-    public DbConnection() {
+    public Booking() {
 
         try {
 
@@ -26,7 +26,7 @@ public class DbConnection {
 
             connection = DriverManager.getConnection(
 
-                    "jdbc:mysql://localhost:3306/sys", username, password);
+                    "jdbc:mysql://localhost:3306/loginadmin1", username, password);
 
             if (connection != null) {
 

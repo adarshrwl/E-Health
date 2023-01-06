@@ -103,6 +103,11 @@ public class BookingAppointment extends javax.swing.JFrame {
         });
 
         Cancel.setText("Cancel Booking");
+        Cancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CancelActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -262,6 +267,23 @@ public class BookingAppointment extends javax.swing.JFrame {
        }
         
     }//GEN-LAST:event_ConfirmActionPerformed
+
+    private void CancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelActionPerformed
+        // TODO add your handling code here:
+         BookingAppointmentController book = new BookingAppointmentController();
+         int result = book.cancelappointment();
+         if (result ==1){
+             
+             
+                JOptionPane.showMessageDialog(null, " All Appointment are cancel");
+       }else{
+             JOptionPane.showMessageDialog(null, "Cancel");
+       }
+        
+         
+    
+        
+    }//GEN-LAST:event_CancelActionPerformed
 
     /**
      * @param args the command line arguments

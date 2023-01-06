@@ -9,9 +9,4 @@ package View;
  * @author User
  */
 class Connection {
-
-    Statement createStatement() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
 }
