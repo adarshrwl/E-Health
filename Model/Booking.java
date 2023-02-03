@@ -5,6 +5,7 @@ public class Booking{
     private String Username;
     private String Password;
     
+    
     public String getUsername() {
         return this.Username;
     }
