@@ -11,7 +11,7 @@ public class loginadmin1 {
     }
 
     // setting username
-    //
+
     public void setUsername(String Username) {
         this.Username = Username;
     }
