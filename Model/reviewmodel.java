@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Other/File.java to edit this template
  */
 package model;
-
+a
 public class reviewmodel {
 
     private String doctorname;
