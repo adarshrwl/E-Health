@@ -9,7 +9,6 @@ public class reviewmodel {
     private String doctorname;
     private String specilization;
     private String comment;
-    private String reviw;
 
     public reviewmodel(
             String Doctorname,
