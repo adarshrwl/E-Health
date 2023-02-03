@@ -6,7 +6,7 @@ package model;
  */
 public class user {
 
- private int userid;
+  private int userid;
   private String FullName;
   private String contact;
   private String email;
@@ -14,38 +14,36 @@ public class user {
   private String city;
   private String zipcode;
   private String filepath;
-  
-   public user(
-      int userid ,    
-    String FullName,
-    String contact,
-    String email,
-    String state,
-    String city,
-    String zipcode,
-    String filepath
-           
+  private String data;
+
+  public user(
+      int userid,
+      String FullName,
+      String contact,
+      String email,
+      String state,
+      String city,
+      String zipcode,
+      String filepath
+
   ) {
-       this.userid = userid;
+    this.userid = userid;
     this.FullName = FullName;
-   
+
     this.contact = contact;
     this.email = email;
-    this.state= state;
+    this.state = state;
     this.zipcode = zipcode;
     this.filepath = filepath;
   }
 
- 
- public void setUserid (int userid) {
-     this.userid = userid;
- }
+  public void setUserid(int userid) {
+    this.userid = userid;
+  }
 
   public void setFullName(String FullName) {
     this.FullName = FullName;
   }
-
-
 
   public void setcontact(String contact) {
     this.contact = contact;
@@ -62,22 +60,22 @@ public class user {
   public void setcity(String city) {
     this.city = city;
   }
+
   public void setzipcode(String zipcode) {
-    this.zipcode= zipcode;
-  }
-  public void setFilepath (String filepath){
-      this.filepath = filepath;
+    this.zipcode = zipcode;
   }
 
-  public int getUserid(){
-      return userid;
+  public void setFilepath(String filepath) {
+    this.filepath = filepath;
+  }
+
+  public int getUserid() {
+    return userid;
   }
 
   public String getFullName() {
     return FullName;
   }
-
-
 
   public String getcontact() {
     return contact;
@@ -94,12 +92,13 @@ public class user {
   public String getcity() {
     return city;
   }
-  
+
   public String getzipcode() {
     return zipcode;
-  
-}
-public String getFilepath(){
+
+  }
+
+  public String getFilepath() {
     return filepath;
-}
+  }
 }
