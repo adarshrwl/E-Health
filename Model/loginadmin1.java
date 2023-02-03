@@ -33,3 +33,7 @@ public class loginadmin1 {
     }
 
 }
+
+public void setPassword(String Password) {
+    this.Password = Password;
+}
