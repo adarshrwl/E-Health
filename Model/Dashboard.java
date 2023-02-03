@@ -65,6 +65,4 @@ public class Dashboard {
 		this.std_contacr = std_contacr;
 	}
 
-	// creation of public constructor
-
 }
