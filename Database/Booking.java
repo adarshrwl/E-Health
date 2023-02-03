@@ -20,7 +20,7 @@ public class Booking {
 
             String username = "root";
 
-            String password = "rikesh123";
+            String password = "root";
 
             Class.forName("com.mysql.cj.jdbc.Driver");
 
