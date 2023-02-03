@@ -66,12 +66,5 @@ public class Dashboard {
 	}
 
 	// creation of public constructor
-	public Dashboard(int std_id, String std_name, int std_age, String std_address, int std_contacr) {
-		this.std_id = std_id;
-		this.std_name = std_name;
-		this.std_age = std_age;
-		this.std_address = std_address;
-		this.std_contacr = std_contacr;
-	}
 
 }
