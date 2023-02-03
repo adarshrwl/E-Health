@@ -14,7 +14,6 @@ public class user {
   private String city;
   private String zipcode;
   private String filepath;
-  private String data;
 
   public user(
       int userid,
