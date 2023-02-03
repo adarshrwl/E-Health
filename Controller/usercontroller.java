@@ -11,27 +11,26 @@ public class usercontroller {
   public int insertUser(user user) {
     // getting user info
 
-   int id = user.getUserid();
+    int id = user.getUserid();
     String FullName = user.getFullName();
     String contact = user.getcontact();
     String email = user.getemail();
     String state = user.getstate();
     String zipcode = user.getzipcode();
-    String city =  user.getcity();
+    String city = user.getcity();
     String filepath = user.getFilepath();
     // code to add user
     String insertQuery = String.format(
-      "INSERT INTO register VALUES(%d,'%s', '%s', '%s', '%s', '%s','%s','%s')",
-            id,
-      FullName,
-      contact,
-      email,
-      state,
-      zipcode,
-      city,
-            filepath
-          
-                
+        "INSERT INTO register VALUES(%d,'%s', '%s', '%s', '%s', '%s','%s','%s')",
+        id,
+        FullName,
+        contact,
+        email,
+        state,
+        zipcode,
+        city,
+        filepath
+
     );
 
     dbConnection = new DbConnection();
@@ -40,7 +39,24 @@ public class usercontroller {
     return result;
   }
 
+  int id = user.getUserid();
+  String FullName = user.getFullName();
+  String contact = user.getcontact();
+  String email = user.getemail();
+  String state = user.getstate();
+  String zipcode = user.getzipcode();
+  String city = user.getcity();
+  String filepath = user.getFilepath();
+  // code to add user
+  String insertQuery = String.format(
+    "INSERT INTO register VALUES(%d,'%s', '%s', '%s', '%s', '%s','%s','%s')",
+          id,
+    FullName,
+    contact,
+    email,
+    state,
+    zipcode,
+    city,
+          filepath
 
-  
 }
-
