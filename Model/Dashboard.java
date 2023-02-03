@@ -43,6 +43,11 @@ public class Dashboard {
 
 	}
 
+	public String getStd_address() {
+		return this.std_address;
+
+	}
+
 	public void setStd_address(String std_address) {
 		this.std_address = std_address;
 	}
