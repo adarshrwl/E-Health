@@ -101,3 +101,12 @@ public class user {
     return filepath;
   }
 }
+
+private int userid;
+private String FullName;
+private String contact;
+private String email;
+private String state;
+private String city;
+private String zipcode;
+private String filepath;
