@@ -7,7 +7,7 @@ public class dashcontroller {
     DbConnection dbConnection;
 
     public int insertStudent(Dashboard dashboard) {
-        string name;
+
         int id = dashboard.getStd_id();
         String name = dashboard.getStd_name();
         String address = dashboard.getStd_address();
