@@ -43,11 +43,6 @@ public class Dashboard {
 
 	}
 
-	public String getStd_address() {
-		return this.std_address;
-
-	}
-
 	public void setStd_address(String std_address) {
 		this.std_address = std_address;
 	}
@@ -58,6 +53,15 @@ public class Dashboard {
 	}
 
 	public void setStd_contacr(int std_contacr) {
+		this.std_contacr = std_contacr;
+	}
+
+	// creation of public constructor
+	public Dashboard(int std_id, String std_name, int std_age, String std_address, int std_contacr) {
+		this.std_id = std_id;
+		this.std_name = std_name;
+		this.std_age = std_age;
+		this.std_address = std_address;
 		this.std_contacr = std_contacr;
 	}
 
