@@ -40,6 +40,7 @@ public class Dashboard {
 	// creation of public getter and setter --> for student Address
 	public String getStd_address() {
 		return this.std_address;
+		a
 	}
 
 	public void setStd_address(String std_address) {
