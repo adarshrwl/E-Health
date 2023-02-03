@@ -20,8 +20,6 @@ public class BookingAppointment extends javax.swing.JFrame {
     String PatientName;
     String ranid = "";
 
-    String name;
-
     public BookingAppointment(int PID) {
         this.PID = PID;
         initComponents();
