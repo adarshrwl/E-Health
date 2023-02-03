@@ -9,8 +9,9 @@ public class loginadmin1 {
     public String getUsername() {
         return this.Username;
     }
-    // setting username
 
+    // setting username
+    //
     public void setUsername(String Username) {
         this.Username = Username;
     }
