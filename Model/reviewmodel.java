@@ -9,7 +9,7 @@ public class reviewmodel {
    private String doctorname;
    private String specilization;
    private String comment;
-   
+   a
    public reviewmodel(
   String Doctorname,
    String Specilization,
