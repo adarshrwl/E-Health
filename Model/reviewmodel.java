@@ -6,30 +6,33 @@ package model;
 
 public class reviewmodel {
 
-   private String doctorname;
-   private String specilization;
-   private String comment;
-   a
-   public reviewmodel(
-  String Doctorname,
-   String Specilization,
-   String comment
-   ){
-       this.doctorname=Doctorname;
-       this.specilization=Specilization;
-       this.comment=comment;
-   }
-   public String getDoctorname(){
-       return this.doctorname;
-   }
-   public String getSpecilization(){
-       return this.specilization;
-   }
-   public String getComment(){
-       return this.comment;
-               
-               }    
-   public static void main(String args[]) {
+    private String doctorname;
+    private String specilization;
+    private String comment;
+
+    public reviewmodel(
+            String Doctorname,
+            String Specilization,
+            String comment) {
+        this.doctorname = Doctorname;
+        this.specilization = Specilization;
+        this.comment = comment;
+    }
+
+    public String getDoctorname() {
+        return this.doctorname;
+    }
+
+    public String getSpecilization() {
+        return this.specilization;
+    }
+
+    public String getComment() {
+        return this.comment;
+
+    }
+
+    public static void main(String args[]) {
         // TODO code application logic here
     }
 }
