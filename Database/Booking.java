@@ -3,7 +3,7 @@ package database;
 import javax.swing.*;
 
 import java.sql.*;
-a
+
 public class Booking {
 
     public Connection connection;
@@ -39,7 +39,7 @@ public class Booking {
             }
 
             statement = connection.createStatement();
-            
+
         } catch (Exception e) {
 
             e.printStackTrace();
